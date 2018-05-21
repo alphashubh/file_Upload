@@ -79,4 +79,6 @@ app.post('/upload', (req, res) => {
 });
 
 
-app.listen(3000);  
+app.listen(3000, '10.0.0.8', () => {
+    console.log('server started');
+});  
