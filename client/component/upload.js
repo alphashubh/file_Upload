@@ -1,6 +1,8 @@
 import React from 'react'
 import axios, { post } from 'axios';
 
+import Header from './header';
+
 class Upload extends React.Component {
 
     constructor(props) {
@@ -51,6 +53,7 @@ class Upload extends React.Component {
     render() {
         return (
             <div>
+                <Header />
                 <div className="loading" id="loading">
                     <img src="https://loading.io/spinners/dual-ring/lg.dual-ring-loader.gif" />
                 </div>
