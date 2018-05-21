@@ -33,6 +33,6 @@ module.exports = {
     historyApiFallback: true,
     contentBase: './',
     hot: true,
-    host: '10.0.0.8'
+    // host: '10.0.0.8'
   }
 };
