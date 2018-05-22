@@ -3,6 +3,7 @@ import { render } from "react-dom";
 import {Provider} from "react-redux";
 import { Router, Route, browserHistory } from 'react-router'
 import { syncHistoryWithStore } from 'react-router-redux'
+import configureStore from './store';
 
 import App from './component/app';
 import Upload from './component/upload';
@@ -12,13 +13,11 @@ import About from './component/about';
 import Contact from './component/contact';
 import Pricing from './component/pricing';
 
-// const store=configureStore();
-// const history = syncHistoryWithStore(browserHistory, store);
+const store=configureStore();
+const history = syncHistoryWithStore(browserHistory, store);
 
-render(<Provider
-//  store={store}
- >
-         <Router history={browserHistory}>
+render(<Provider store={store}>
+         <Router history={history}>
             <Route path='/' component={App} />
             <Route path='/upload' component={Upload}/>
             <Route path='/login' component={Login}/>
