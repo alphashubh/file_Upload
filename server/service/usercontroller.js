@@ -1,4 +1,4 @@
-const User=require('../models/user');
+const User=require('../DAO/user');
 
 module.exports.registeruser=function(user,callback){
     User.registerUser(user,callback);

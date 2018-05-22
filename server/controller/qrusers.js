@@ -3,8 +3,8 @@ const router=express.Router();
 const passport= require('passport');
 const jwt =require('jsonwebtoken');
 
-const User=require('../models/user');
-const usercontroller=require('../controller/usercontroller');
+const User=require('../DAO/user');
+const usercontroller=require('../service/usercontroller');
 const config=require('../config/database');
 //Register
 

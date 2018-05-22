@@ -1,7 +1,7 @@
 const express=require('express');
 const router=express.Router();
-const inventory=require('../models/model_inventory');
-const inventory_controller=require('../controller/inventory_controller');
+const inventory=require('../DAO/model_inventory');
+const inventory_controller=require('../service/inventory_controller');
 
 //AddQR
 router.post('/addQr',(req,res,next)=>{

@@ -19,8 +19,8 @@ mongoose.connection.on('error', (err) =>{
 
 const app=express();
 
-const qrusers=require('./routes/qrusers');
-const inventory=require('./routes/inventory');
+const qrusers=require('./controller/qrusers');
+const inventory=require('./controller/inventory');
 
 //Port number
  const port=3000;
